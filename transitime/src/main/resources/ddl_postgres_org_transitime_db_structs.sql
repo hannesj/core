@@ -140,7 +140,7 @@
         destinationId varchar(60) not null,
         configRev int4 not null,
         containsId varchar(60),
-        primary key (routeId, originId, fareId, destinationId, configRev)
+        primary key (routeId, originId, fareId, destinationId, configRev, containsId)
     );
 
     create table Frequencies (
