@@ -44,7 +44,6 @@ public class HslMqttAvlModule extends AvlModule implements MqttCallback{
     }
 
     @Override public void messageArrived(String topic, MqttMessage message) throws Exception {
-        System.out.println(message);
         JSONObject obj = new JSONObject(new String(message.getPayload())).getJSONObject("VP");
         AvlReport report = new AvlReport(
             obj.getString("veh"),
