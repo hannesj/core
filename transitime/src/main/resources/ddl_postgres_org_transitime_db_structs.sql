@@ -236,7 +236,7 @@
         routeOrder int4,
         shortName varchar(80),
         textColor varchar(10),
-        type varchar(2),
+        type varchar(4),
         primary key (id, configRev)
     );
 
