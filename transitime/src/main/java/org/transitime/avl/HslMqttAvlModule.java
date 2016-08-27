@@ -50,7 +50,7 @@ public class HslMqttAvlModule extends AvlModule implements MqttCallback{
             obj.getLong("tsi") * 1000,
             obj.getDouble("lat"),
             obj.getDouble("long"),
-            obj.isNull("spd") ? Float.NaN : (float) (double) obj.getDouble("spd"), //Unit??
+            obj.isNull("spd") ? Float.NaN : (float) (double) obj.getDouble("spd"),
             obj.isNull("hdg") ? Float.NaN : (float) (double) obj.getDouble("hdg"),
             obj.isNull("source") ? "" : obj.getString("source")
         );
